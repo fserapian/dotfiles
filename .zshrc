@@ -104,6 +104,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias phpunit="./vendor/phpunit/phpunit/phpunit"
 alias pu="clear && vendor/bin/phpunit"
 alias pf="clear && vendor/bin/phpunit --filter"
+alias pcat="pygmentize -f terminal256 -O style=native -g"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
