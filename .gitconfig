@@ -12,5 +12,6 @@
     s = status --short
     br = branch
     co = checkout
+    ci = commit
 [init]
     defaultBranch = main
