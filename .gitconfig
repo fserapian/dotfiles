@@ -8,6 +8,7 @@
 [alias]
     lg = log --all --decode --graph --online
     g = git
-    s = status
+    st = status
+    s = status --short
 [init]
     defaultBranch = main
