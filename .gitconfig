@@ -10,5 +10,7 @@
     g = git
     st = status
     s = status --short
+    br = branch
+    co = checkout
 [init]
     defaultBranch = main
