@@ -6,7 +6,7 @@
 [color]
     ui = true
 [alias]
-    lg = log --all --decode --graph --online
+    lg = log --all --graph
     g = git
     st = status
     s = status --short
