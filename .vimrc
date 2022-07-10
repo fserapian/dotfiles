@@ -5,9 +5,19 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
+Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 
 call plug#end()
+
+nnoremap <C-f> :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " Keep 1000 lines of history
 set history=1000
@@ -33,7 +43,8 @@ set shiftwidth=4
 " Tabs are spaces
 set expandtab
 
-set mouse=a
+" Mouse usage
+" set mouse=a
 
 " Show incomplete commands
 set showcmd
