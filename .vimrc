@@ -21,11 +21,19 @@ set cursorline
 " Set tab size
 set tabstop=4
 
+" Smart tab
+set smarttab
+
 " Effective tab while editing
 set softtabstop=4
 
+" Shift width
+set shiftwidth=4
+
 " Tabs are spaces
 set expandtab
+
+set mouse=a
 
 " Show incomplete commands
 set showcmd
@@ -49,6 +57,9 @@ set smartcase
 
 " Turn on line numbering
 set number
+
+" Relative numbering
+set relativenumber
 
 "Create a backup file
 " set backup
