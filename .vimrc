@@ -10,9 +10,13 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 
 call plug#end()
 
+" NERDTree settings
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+
+" Close NERDTree automatically on closing vim
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
