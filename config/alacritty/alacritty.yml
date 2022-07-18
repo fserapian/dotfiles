@@ -78,13 +78,13 @@ font:
 
   # The bold font face
   bold:
-    family: Source Code Pro
+    family: Hack
     # Style can be specified to pick a specific face.
     style: Bold
 
   # The italic font face
   italic:
-    family: Source Code Pro
+    family: Hack
     # Style can be specified to pick a specific face.
     style: Italic
 
@@ -103,7 +103,7 @@ window:
     x: 2
     y: 2
 
-  # decorations: none
+  decorations: none
 
   # scrolling:
   #   # Maximum number of lines in the scrollback buffer.
