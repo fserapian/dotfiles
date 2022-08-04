@@ -1,5 +1,6 @@
 export ZSH="/Users/fsn/.oh-my-zsh"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH=${PATH}:/usr/local/mysql/bin/
 
 ZSH_THEME="robbyrussell"
 
