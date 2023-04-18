@@ -14,5 +14,7 @@
     co = checkout
     ci = commit
     p = push
+    rank = shortlog -s -n --all
+    rankp = shortlog -s -n --all --no-merges
 [init]
     defaultBranch = main
