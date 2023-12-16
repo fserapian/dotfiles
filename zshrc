@@ -24,3 +24,7 @@ export NVM_DIR="$HOME/.nvm"
 HOME=${HOME:-'/Users/fsn'}
 export PATH="$HOME/"'.magento-cloud/bin':"$PATH"
 if [ -f "$HOME/"'.magento-cloud/shell-config.rc' ]; then . "$HOME/"'.magento-cloud/shell-config.rc'; fi # END SNIPPET
+
+source /Users/fsn/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+export NVM_SYMLINK_CURRENT=true
