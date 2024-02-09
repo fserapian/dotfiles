@@ -13,7 +13,7 @@ alias phpunit="./vendor/phpunit/phpunit/phpunit"
 alias pu="clear && vendor/bin/phpunit"
 alias pf="clear && vendor/bin/phpunit --filter"
 alias pcat="pygmentize -f terminal256 -O style=native -g"
-alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 alias mc='magento-cloud'
 
 export NVM_DIR="$HOME/.nvm"
