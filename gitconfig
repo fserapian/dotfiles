@@ -1,20 +1,60 @@
 [user]
     name = Fadi Serapian
     email = fadi.serapian@gmail.com
+
 [core]
     editor = vim
+
 [color]
     ui = true
-[alias]
-    lg = log --all --graph
-    g = git
-    st = status
-    s = status --short
-    br = branch
-    co = checkout
-    ci = commit
-    p = push
-    rank = shortlog -s -n --all
-    rankp = shortlog -s -n --all --no-merges
+
 [init]
     defaultBranch = main
+
+[alias]
+    # status
+    st = status
+    s = status --short
+
+    # log
+    lg = log --graph --oneline --decorate --all
+    lga = log --graph --decorate --all --pretty=format:'%C(auto)%h %C(green)%an %C(reset)%s %C(dim white)- %ar'
+
+    # branch
+    br = branch
+    sw = switch
+    swc = switch -c
+    bd = branch -d
+    bD = branch -D
+
+    # checkout (legacy still useful mentally)
+    co = checkout
+
+    # commit
+    ci = commit
+    cm = commit -m
+    ca = commit -a
+    cam = commit -a -m
+    amend = commit --amend --no-edit
+
+    # diff
+    d = diff
+    ds = diff --staged
+
+    # navigation
+    last = log -1 HEAD
+    undo = reset --soft HEAD~1
+
+    # push/pull
+    p = push
+    ps = push
+    psu = push -u origin HEAD
+    pl = pull
+    plo = pull --rebase
+
+    # stats
+    rank = shortlog -s -n --all
+    rankp = shortlog -s -n --all --no-merges
+
+    # quick save
+    save = !git add -A && git commit -m "wip"
